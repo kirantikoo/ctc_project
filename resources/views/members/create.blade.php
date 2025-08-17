@@ -61,9 +61,9 @@
                                     <i class="fa-solid fa-floppy-disk me-1"></i>
                                     <span id="SubmitButtonText">Create Member</span>
                                 </button>
-                                <button type="button" class="btn btn-secondary" onclick="showPage('home')">
-                                    <i class="fa-solid fa-xmark me-1"></i>Cancel
-                                </button>
+                                <a href="{{ route('home') }}" class="btn btn-secondary">
+                                <i class="fa-solid fa-xmark me-1"></i>Cancel
+                            </a>
                             </div>
                             <!-- end form body -->
                         </div>

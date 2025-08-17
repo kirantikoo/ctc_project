@@ -12,7 +12,7 @@ class MemberController extends Controller
      */
     public function index()
     {
-        $members = Member::orderBy('id','desc')->paginate(10);
+        $members = Member::orderBy('id','desc')->paginate(6);
         return view('home', compact('members'));
     }
 

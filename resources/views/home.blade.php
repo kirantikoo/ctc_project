@@ -86,6 +86,10 @@
                 @endforeach
             </tbody>
         </table>
+        <!-- Pagination Links -->
+        <div class="d-flex justify-content-center mt-3">
+            {{ $members->links('pagination::bootstrap-5') }}
+        </div>
     </div>
 
     <!-- Card View -->
@@ -118,6 +122,10 @@
                 </div>
             </div>
         @endforeach
+        <!-- Pagination Links -->
+        <div class="d-flex justify-content-center mt-3">
+            {{ $members->links('pagination::bootstrap-5') }}
+        </div>
     </div>
 </div>
 
