@@ -30,6 +30,7 @@ class AuthController extends Controller
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
 
+          
             // Ensure only admins can log in here
             if (!Auth::user()->is_admin) {
                 Auth::logout();
